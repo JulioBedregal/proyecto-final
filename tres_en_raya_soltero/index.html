@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLITARIO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: #585b5d;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: rgb(212, 194, 210);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #game-board {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        #game-board td {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #343a40;
+            text-align: center;
+            font-size: 48px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #game-board td:hover {
+            background-color: #e9ecef;
+        }
+
+        #new-game {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        #game-status {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .btn_danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn_danger a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">SOLITARIO</h1>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <table id="game-board">
+                    <tr>
+                        <td id="cell-0"></td>
+                        <td id="cell-1"></td>
+                        <td id="cell-2"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell-3"></td>
+                        <td id="cell-4"></td>
+                        <td id="cell-5"></td>
+                    </tr>
+                    <tr>
+                        <td id="cell-6"></td>
+                        <td id="cell-7"></td>
+                        <td id="cell-8"></td>
+                    </tr>
+                </table>
+                <button id="new-game" class="btn btn-primary">jugar de nuevo</button>
+                <p id="game-status"></p>
+                <button class="btn btn_danger"><a href="../index.php">regresar</a></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/juego.js"></script>
+</body>
+</html>

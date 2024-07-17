@@ -1,0 +1,41 @@
+body {
+    background-color: #585b5d;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: rgb(212, 194, 210);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.x {
+    background-image: url('../images/d.png');
+    background-size: 100% 100%;
+}
+
+.o {
+    background-image: url('../images/o.jpg');
+    background-size: 100% 100%;
+}
